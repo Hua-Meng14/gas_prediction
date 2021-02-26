@@ -10,7 +10,7 @@ x = df["Distant"]
 y = df["Gas"]
 x=np.array(x).reshape(-1,1)
 y=np.array(y)
-x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3)
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
 model.fit(x_train,y_train)
 print(model.predict([[124],[345]]))
 print(model.score(x_test,y_test))
